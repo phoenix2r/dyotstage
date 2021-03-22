@@ -47,7 +47,7 @@
     &-frame {
       content: '';
       height: 18vh;
-      width: 15vw;
+      width: 10vw;
       position: absolute;
       bottom: 75%;
       left: 75%;
@@ -55,11 +55,20 @@
     }
 
     &-content {
-      margin: 1.5rem;
+      margin: 1.8rem;
       color: #fff;
+      width: 100%;
 
       h1 {
         font-size: 3rem;
+      }
+
+      .x-large-bottom {
+        text-align: left;
+      }
+      .x-large-top {
+        text-align: right;
+        margin: 0.5rem;
       }
     }
   }
