@@ -1,0 +1,147 @@
+// Single page styling
+.single-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &-sidebar {
+    display: block;
+    float: right;
+  }
+}
+
+// Container
+.container {
+  max-width: $max-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin: 6rem 0 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  .title {
+    flex: 1;
+    position: relative;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+    &-box {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // width: 100%;
+      // height: 100%;
+    }
+
+    &-frame {
+      content: '';
+      height: 18vh;
+      width: 15vw;
+      position: absolute;
+      bottom: 75%;
+      left: 75%;
+      border: 2px solid #fff;
+    }
+
+    &-content {
+      margin: 1.5rem;
+      color: #fff;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .form {
+    flex: 1;
+    z-index: 5;
+    padding: 2rem;
+    margin-right: 1rem;
+    align-self: flex-end;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .guidance {
+    flex: 1.3;
+    align-self: flex-start;
+    background: linear-gradient(to bottom right, #fff 40%, #e7e7e7);
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(#cdcdcd, #fff);
+    border-radius: 15px;
+    padding: 1rem;
+  }
+}
+
+.progress-steps {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .step {
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      top: 25%;
+      left: -10%;
+      width: 1rem;
+      height: 2rem;
+      border-top: 1rem solid transparent;
+      border-left: 1.5rem solid $forhousing-blue;
+      border-bottom: 1rem solid transparent;
+    }
+
+    .arrow-number {
+      color: #fff;
+      position: absolute;
+      top: 30%;
+      left: -5%;
+    }
+
+    &-content {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      i {
+        color: $forhousing-dark-blue;
+      }
+
+      .step-title {
+        color: $forhousing-dark-orange;
+      }
+    }
+  }
+}
+
+// Pitcher pages
+#pitcher {
+  background: url(../imgs/sponsor-bg.jpg) no-repeat center center/cover;
+}
